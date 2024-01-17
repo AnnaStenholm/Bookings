@@ -1,3 +1,11 @@
+.room-image{
+    max-width:50%;
+}
+
+.main-content{
+    min-height: 100vh;
+}
+
 .my-footer{
     height: 5em;
     background-color: #163b65;
@@ -6,6 +14,4 @@
     color: white;
     font-size: 80%;
 }
-.room-image{
-    max-width:50%;
-}
+

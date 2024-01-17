@@ -1,0 +1,10 @@
+mode: set
+github.com/AnnaStenholm/bookings/cmd/web/main.go:24.14,26.17 2 0
+github.com/AnnaStenholm/bookings/cmd/web/main.go:26.17,28.4 1 0
+github.com/AnnaStenholm/bookings/cmd/web/main.go:34.3,43.17 4 0
+github.com/AnnaStenholm/bookings/cmd/web/main.go:46.19,61.15 10 1
+github.com/AnnaStenholm/bookings/cmd/web/main.go:61.15,64.2 2 0
+github.com/AnnaStenholm/bookings/cmd/web/main.go:66.1,72.12 6 1
+github.com/AnnaStenholm/bookings/cmd/web/middleware.go:10.43,21.2 3 1
+github.com/AnnaStenholm/bookings/cmd/web/middleware.go:23.50,25.2 1 1
+github.com/AnnaStenholm/bookings/cmd/web/routes.go:12.48,45.2 18 1
