@@ -11,12 +11,12 @@
 	<title>Reservation</title>
 
 	</head>
-	<body>
+	<body style="background-color: antiquewhite;">
 
 	<!---Navbar--->
-	<nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
+	<nav class="navbar navbar-expand-lg  border-body" style="background-color: #9fc4cd;"data-bs-theme="dark">
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">Navbar</a>
+	    <a class="navbar-brand" href="#">Fort Smythe bed and breakfast</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" 		aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
@@ -33,8 +33,8 @@
 	            Rooms
 	          </a>
 	          <ul class="dropdown-menu">
-	            <li><a class="dropdown-item" href="/generals-quarters">General's Quarters'</a></li>
-	            <li><a class="dropdown-item" href="/majors-suite">Major's suite'</a></li>
+	            <li><a class="dropdown-item" href="/generals-quarters">General's Quarters</a></li>
+	            <li><a class="dropdown-item" href="/majors-suite">Major's suite</a></li>
 	          </ul>
 	        </li>
 	          <li class="nav-item">
@@ -56,9 +56,29 @@
 
 
  <div class="row my-footer">
-    <div class="col">Left</div>
-    <div class="col">Middle</div>
-    <div class="col">Right</div>
+    <div class="col">
+      <h5>Fort Smythe bed and breakfast</h5>
+      Address: P.O. Box 8700
+      St. John's, NL Canada
+    </div>
+    <div class="col">
+      <h5>Contact</h5>
+      <div class="col">
+        <div class="row">
+        <img src="/static/images/instagram_icon.png" alt="instagram" class="icon">
+        <img src="/static/images/email.png" alt="email" style="width: 50px; height: 30px;">
+      </div>
+
+      </div>
+    </div>
+
+    <div class="col">
+      <h5>Make a booking</h5>
+      <div class="row">
+      <a href="/generals-quarters" class="link">General's quarters</a>
+      <a href="/majors-suite" class="link">Major's suite</a>
+    </div>
+    </div>
 </div>
 
 
@@ -68,6 +88,7 @@
 <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.3.4/dist/js/datepicker-full.min.js"></script>
 <script src="https://unpkg.com/notie"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 
 {{block "js" .}}
 

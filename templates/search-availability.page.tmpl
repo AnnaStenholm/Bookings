@@ -29,7 +29,7 @@
 
         <hr>
 
-              <button type="submit" class="btn btn-primary">Search Availability</button>
+              <button type="submit" style="background-color:#31698a; padding: 10px; border-radius: 14px; color:white; text-decoration: none; box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;">Search Availability</button>
             </form>
 
             </div>
@@ -44,7 +44,8 @@
 <script>
 const elem = document.getElementById('reservations-date');
 const rangepicker = new DateRangePicker(elem, {
-format: "yyyy-mm-dd"
+format: "yyyy-mm-dd",
+minDate: new Date(),
 });
 </script>
 
