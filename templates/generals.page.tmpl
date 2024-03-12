@@ -6,7 +6,7 @@
 
     <div class="row">
         <div class="col">
-        <img src="/static/images/generals-quarters.png" class="img-fluid img-thumbnail mx-auto d-block 		room-image" alt="room image">
+        <img src="/assets/images/generals-quarters.png" class="img-fluid img-thumbnail mx-auto d-block room-image" alt="room image">
     </div>
 </div>
 
@@ -64,6 +64,7 @@ document.getElementById("check-availability-button").addEventListener("click", f
         format: "yyyy-mm-dd",
         showOnFocus: true,
 
+
         })
             },
 
@@ -73,6 +74,7 @@ document.getElementById("check-availability-button").addEventListener("click", f
             let form = document.getElementById("check-availability-form")
             let formData = new FormData(form);
             formData.append("csrf_token", "{{.CSRFToken}}");
+            formData.append("room_id", "1")
 
             fetch("/search-availability-json", {
                 method: "post",
@@ -82,8 +84,13 @@ document.getElementById("check-availability-button").addEventListener("click", f
             .then(response => response.json())
             .then(data => {
                 console.log(data);
-                console.log(data.ok);
-                console.log(data.message);
+                if (data.ok) {
+                    console.log("room is available")
+                } else {
+                    attention.error({
+                        msg: "No availability",
+                    })
+                }
             })
         }
 
