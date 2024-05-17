@@ -80,14 +80,6 @@ showConfirmButton = true,
 },
 
 
-    preConfirm: () => {
-    return [
-    document.getElementById("start").value,
-    document.getElementById("end").value
-]
-},
-
-
 });
 
 
