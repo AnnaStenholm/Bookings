@@ -26,6 +26,14 @@
     label{
       font-weight: bold
     }
+    .notie-container {
+      z-index: 50000;
+    }
+    @media screen and (max-width: 991px) {
+      .sidebar-offcanvas.active {
+        left: 0
+      }
+    }
   </style>
   {{block "css" .}}
 
@@ -64,9 +72,9 @@
     <!-- partial -->
     <div class="container-fluid page-body-wrapper">
       <!-- partial:partials/_sidebar.html -->
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+      <nav class="sidebar sidebar-offcanvas active" id="sidebar">
         <ul class="nav">
-          <li class="nav-item">
+          <li class="nav-item active">
             <a class="nav-link" href="/admin/dashboard">
               <i class="ti-shield menu-icon"></i>
               <span class="menu-title">Dashboard</span>
